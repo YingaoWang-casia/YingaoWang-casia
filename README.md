@@ -82,13 +82,12 @@
 ## GitHub数据统计（自动累计全仓库Stars、提交、PR）
 <div align="center">
 <a href="https://github.com/YingaoWang-casia">
-  <img height="168" src="https://github-readme-stats.vercel.app/api?username=YingaoWang-casia&show_icons=true&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a" alt="数据统计" />
+  <img height="168" src="https://github-readme-stats.vercel.app/api?username=YingaoWang-casia&show_icons=true&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a">
 </a>
 <a href="https://github.com/YingaoWang-casia?tab=repositories">
-  <img height="168" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YingaoWang-casia&layout=compact&hide_border=true&bg_color=ffffff" alt="常用语言统计" />
+  <img height="168" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YingaoWang-casia&layout=compact&hide_border=true&bg_color=ffffff">
 </a>
 </div>
-
 ---
 
 ## 联系方式
