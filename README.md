@@ -256,6 +256,22 @@
 </a>
 
 </div>
+
+---
+
+## GitHub Stats
+
+<div align="center">
+
+<a href="https://github.com/YingaoWang-casia">
+  <img height="168" src="https://raw.githubusercontent.com/YingaoWang-casia/YingaoWang-casia/main/profile/stats.svg" alt="GitHub stats" />
+</a>
+<a href="https://github.com/YingaoWang-casia?tab=repositories">
+  <img height="168" src="https://raw.githubusercontent.com/YingaoWang-casia/YingaoWang-casia/main/profile/top-langs.svg" alt="Top languages" />
+</a>
+
+</div>
+
 ---
 
 ## 当前关注
