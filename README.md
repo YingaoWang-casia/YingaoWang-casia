@@ -30,9 +30,9 @@
 
 ## 关于我
 
-本科就读于北京工业大学人工智能专业，目前为中国科学院自动化研究所 / 中国科学院大学模式识别与智能系统方向硕士研 0。
+本科就读于北京工业大学人工智能专业，目前为中国科学院自动化研究所模式识别与智能系统方向硕士。
 
-主要研究和工程方向包括：语音信号处理、VAD 语音端点检测、对话轮次检测、全双工语音交互、语音交互 Benchmark、LLM Agent 与 RAG 工程落地。
+主要研究和工程方向包括：VAD 语音端点检测、对话轮次检测、全双工语音交互、语音交互 Benchmark、LLM Agent 与 RAG 工程落地。
 
 我关注从算法建模到工程落地的完整链路，包括数据集构建、模型训练与评测、音频处理流水线、实时交互系统、文档智能解析系统以及开源项目工程化维护。
 
@@ -43,15 +43,15 @@
 | 时间 | 学校 / 机构 | 专业 / 方向 |
 | --- | --- | --- |
 | 2022.09 - 2026.07 | 北京工业大学 | 人工智能，工学学士 |
-| 2026.09 - 至今 | 中国科学院自动化研究所 / 中国科学院大学 | 模式识别与智能系统，硕士（研 0） |
+| 2026.09 - 至今 | 中国科学院自动化研究所 | 模式识别与智能系统，硕士|
 
-研究方向：语音信号处理、声学建模、语音交互系统、大模型应用工程。
+研究方向：语音交互、大模型应用。
 
 ---
 
 ## 实习经历
 
-### 百融云创 — 语音算法 / 音频 AI 实习生
+### 百融云创 — 语音算法工程师
 
 时间：2025.12 - 至今
 
@@ -68,7 +68,7 @@
 3. 全双工语音交互探索  
    参与全双工交互链路中的语音检测、轮次判断、打断识别和响应时机控制等模块开发，提升语音系统在自然对话中的交互流畅度。
 
-技术关键词：VAD Turn Detection Full-duplex Interaction Speech AI ONNX Benchmark 实时语音交互
+技术关键词：VAD Turn Detection Full-duplex Interaction Speech AI Benchmark 实时语音交互
 
 ---
 
@@ -86,7 +86,7 @@
 2. 招投标文件智能解析助手  
    面向招投标业务场景，构建多路径文档抽取流程，结合 DeepSeek-Chat、差异化 Prompt、GTE 向量检索与 Rerank 策略，实现招标文件参数抽取、结构化解析与临时知识库构建。
 
-技术关键词：LLM Agent RAG DeepSeek GTE Rerank 文档解析 知识库构建
+技术关键词：LLM Agent RAG GTE Rerank 文档解析 知识库构建
 
 ---
 
@@ -121,8 +121,8 @@
 | 编程与工程 | Python, Bash, Linux, Git, Docker |
 | 深度学习 | PyTorch, ONNX, Anaconda |
 | 音频处理 | FFmpeg, VAD, Turn Detection, Full-duplex Interaction |
-| 大模型工程 | LLM Agent, RAG, Prompt Engineering, DeepSeek, GTE, Rerank |
-| 工具平台 | Dify, RAGFlow, Coze, FastAPI |
+| 大模型工程 | LLM Agent, RAG, Prompt Engineering, GTE, Rerank |
+| 工具平台 | Dify, RAGFlow |
 
 ---
 
