@@ -247,21 +247,30 @@
 
 ---
 
-## GitHub 统计入口
+## Contribution Activity
 
-<p align="center">
-  <a href="https://github.com/YingaoWang-casia?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repositories-View%20on%20GitHub-181717?style=for-the-badge&logo=github" />
-  </a>
-  <a href="https://github.com/YingaoWang-casia?tab=stars">
-    <img src="https://img.shields.io/badge/Stars-View%20Starred%20Repos-0891b2?style=for-the-badge&logo=github" />
-  </a>
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Open%20Source-Active-14b8a6?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/badge/Projects-Speech%20AI%20%7C%20RAG%20%7C%20Agent-0891b2?style=for-the-badge" />
-</p>
+<a href="https://github.com/YingaoWang-casia">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YingaoWang-casia&bg_color=ffffff&color=0f172a&line=0891b2&point=14b8a6&area=true&area_color=ccfbf1&hide_border=true&custom_title=GitHub%20Contribution%20Activity" alt="GitHub contribution activity graph" />
+</a>
+
+</div>
+
+---
+
+## GitHub Stats
+
+<div align="center">
+
+<a href="https://github.com/YingaoWang-casia">
+  <img height="168" src="profile/stats.svg" alt="GitHub stats" />
+</a>
+<a href="https://github.com/YingaoWang-casia?tab=repositories">
+  <img height="168" src="profile/top-langs.svg" alt="Top languages" />
+</a>
+
+</div>
 
 ---
 
