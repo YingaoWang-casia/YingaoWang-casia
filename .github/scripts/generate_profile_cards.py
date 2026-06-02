@@ -8,43 +8,30 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 OWNER = os.environ.get("GITHUB_REPOSITORY_OWNER", "YingaoWang-casia")
-TOKEN = os.environ.get("GITHUB_TOKEN", "")
+PROFILE_TOKEN = os.environ.get("PROFILE_STATS_TOKEN", "")
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+AUTH_TOKEN = PROFILE_TOKEN or GITHUB_TOKEN
 OUT_DIR = Path("profile")
-
-COLORS = {
-    "Python": "#3776ab",
-    "Jupyter Notebook": "#da5b0b",
-    "JavaScript": "#f1e05a",
-    "TypeScript": "#3178c6",
-    "HTML": "#e34c26",
-    "CSS": "#563d7c",
-    "Shell": "#89e051",
-    "PowerShell": "#012456",
-    "Makefile": "#427819",
-    "C++": "#f34b7d",
-    "C": "#555555",
-    "Java": "#b07219",
-    "Go": "#00add8",
-    "Rust": "#dea584",
-    "Markdown": "#083fa1",
-}
+COLORS = {"Python": "#3776ab", "HTML": "#e34c26", "Shell": "#89e051", "PowerShell": "#012456", "Makefile": "#427819", "Jupyter Notebook": "#da5b0b", "JavaScript": "#f1e05a", "TypeScript": "#3178c6", "CSS": "#563d7c", "C++": "#f34b7d", "C": "#555555", "Java": "#b07219", "Go": "#00add8", "Rust": "#dea584", "Markdown": "#083fa1"}
 
 
 def request_json(url: str):
     headers = {"User-Agent": "profile-card-generator"}
-    if TOKEN:
-        headers["Authorization"] = f"Bearer {TOKEN}"
+    if AUTH_TOKEN:
+        headers["Authorization"] = f"Bearer {AUTH_TOKEN}"
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 
-def fetch_owner_repos():
-    repos = []
-    page = 1
+def fetch_repos():
+    repos, page = [], 1
+    if PROFILE_TOKEN:
+        base = "https://api.github.com/user/repos?affiliation=owner,collaborator,organization_member&visibility=all&sort=updated"
+    else:
+        base = f"https://api.github.com/users/{OWNER}/repos?type=all&sort=updated"
     while True:
-        url = f"https://api.github.com/users/{OWNER}/repos?type=owner&sort=updated&per_page=100&page={page}"
-        batch = request_json(url)
+        batch = request_json(f"{base}&per_page=100&page={page}")
         if not batch:
             break
         repos.extend(batch)
@@ -60,89 +47,50 @@ def fetch_languages(repos):
         if repo.get("fork"):
             continue
         try:
-            langs = request_json(repo["languages_url"])
+            totals.update({k: int(v) for k, v in request_json(repo["languages_url"]).items()})
         except Exception:
-            continue
-        totals.update({name: int(size) for name, size in langs.items()})
+            pass
     return totals
 
 
 def write_stats_card(repos):
-    public_repos = [repo for repo in repos if not repo.get("private")]
-    total_stars = sum(int(repo.get("stargazers_count", 0)) for repo in public_repos)
-    total_forks = sum(int(repo.get("forks_count", 0)) for repo in public_repos)
-    original_repos = sum(1 for repo in public_repos if not repo.get("fork"))
-    forked_repos = sum(1 for repo in public_repos if repo.get("fork"))
-
     rows = [
-        ("Total Stars Earned", total_stars),
-        ("Public Repositories", len(public_repos)),
-        ("Original Projects", original_repos),
-        ("Repository Forks", total_forks),
-        ("Forked Repositories", forked_repos),
+        ("Total Stars Earned", sum(int(r.get("stargazers_count", 0)) for r in repos)),
+        ("Tracked Repositories", len(repos)),
+        ("Original Projects", sum(1 for r in repos if not r.get("fork"))),
+        ("Repository Forks", sum(int(r.get("forks_count", 0)) for r in repos)),
+        ("Private Repositories", sum(1 for r in repos if r.get("private"))),
+        ("Forked Repositories", sum(1 for r in repos if r.get("fork"))),
     ]
-
-    row_svg = []
-    for index, (label, value) in enumerate(rows):
-        y = 66 + index * 22
-        row_svg.append(
-            f'<text x="34" y="{y}" class="label">{escape(label)}:</text>'
-            f'<text x="245" y="{y}" class="value">{value}</text>'
-        )
-
-    svg = f'''<svg width="467" height="170" viewBox="0 0 467 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">{escape(OWNER)} GitHub Stats</title>
-  <desc id="desc">Total stars and repository statistics for {escape(OWNER)}.</desc>
-  <style>
-    .title {{ font: 600 18px 'Segoe UI', Ubuntu, sans-serif; fill: #0891b2; }}
-    .label {{ font: 600 14px 'Segoe UI', Ubuntu, sans-serif; fill: #64748b; }}
-    .value {{ font: 700 14px 'Segoe UI', Ubuntu, sans-serif; fill: #0f172a; }}
-    .star {{ fill: #0891b2; }}
-  </style>
-  <rect x="0.5" y="0.5" width="466" height="169" rx="4.5" fill="#ffffff00" stroke="#e2e8f0" stroke-opacity="0"/>
-  <text x="25" y="35" class="title">{escape(OWNER)}'s GitHub Stats</text>
-  <path class="star" d="M388 43.5l9.4 19 21 3.1-15.2 14.8 3.6 20.9L388 91.4l-18.8 9.9 3.6-20.9-15.2-14.8 21-3.1 9.4-19z" opacity="0.16"/>
-  {''.join(row_svg)}
-</svg>
-'''
+    row_svg = "".join(
+        f'<text x="34" y="{58 + i * 18}" class="label">{escape(k)}:</text><text x="245" y="{58 + i * 18}" class="value">{v}</text>'
+        for i, (k, v) in enumerate(rows)
+    )
+    note = "all accessible repositories" if PROFILE_TOKEN else "public repositories only"
+    svg = f'''<svg width="467" height="170" viewBox="0 0 467 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+<style>.title{{font:600 18px 'Segoe UI',Ubuntu,sans-serif;fill:#0891b2}}.label{{font:600 13px 'Segoe UI',Ubuntu,sans-serif;fill:#64748b}}.value{{font:700 13px 'Segoe UI',Ubuntu,sans-serif;fill:#0f172a}}.note{{font:500 11px 'Segoe UI',Ubuntu,sans-serif;fill:#94a3b8}}.star{{fill:#0891b2}}</style>
+<rect x="0.5" y="0.5" width="466" height="169" rx="4.5" fill="#ffffff00" stroke="#e2e8f0" stroke-opacity="0"/>
+<text x="25" y="32" class="title">{escape(OWNER)}'s GitHub Stats</text><path class="star" d="M388 43.5l9.4 19 21 3.1-15.2 14.8 3.6 20.9L388 91.4l-18.8 9.9 3.6-20.9-15.2-14.8 21-3.1 9.4-19z" opacity="0.16"/>
+{row_svg}<text x="34" y="158" class="note">scope: {escape(note)}</text></svg>'''
     (OUT_DIR / "github-stats.svg").write_text(svg, encoding="utf-8")
 
 
 def write_top_langs_card(language_totals):
-    total = sum(language_totals.values())
-    top = language_totals.most_common(6)
-    if not top:
-        top = [("No language data", 1)]
-        total = 1
-
-    rows = []
-    for index, (name, size) in enumerate(top):
-        pct = size / total
-        y = 66 + index * 18
-        color = COLORS.get(name, "#0891b2")
-        rows.append(f'<circle cx="32" cy="{y - 4}" r="5" fill="{color}"/>')
-        rows.append(f'<text x="45" y="{y}" class="label">{escape(name)}</text>')
-        rows.append(f'<text x="315" y="{y}" class="pct">{pct * 100:.1f}%</text>')
-
-    svg = f'''<svg width="360" height="170" viewBox="0 0 360 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">{escape(OWNER)} Top Languages</title>
-  <desc id="desc">Top programming languages by repository byte count for {escape(OWNER)}.</desc>
-  <style>
-    .title {{ font: 600 18px 'Segoe UI', Ubuntu, sans-serif; fill: #0891b2; }}
-    .label {{ font: 600 13px 'Segoe UI', Ubuntu, sans-serif; fill: #64748b; }}
-    .pct {{ font: 700 13px 'Segoe UI', Ubuntu, sans-serif; fill: #0f172a; text-anchor: end; }}
-  </style>
-  <rect x="0.5" y="0.5" width="359" height="169" rx="4.5" fill="#ffffff00" stroke="#e2e8f0" stroke-opacity="0"/>
-  <text x="25" y="35" class="title">Top Languages</text>
-  {''.join(rows)}
-</svg>
-'''
+    total = sum(language_totals.values()) or 1
+    top = language_totals.most_common(6) or [("No language data", 1)]
+    rows = "".join(
+        f'<circle cx="32" cy="{62 + i * 18}" r="5" fill="{COLORS.get(name, "#0891b2")}"/><text x="45" y="{66 + i * 18}" class="label">{escape(name)}</text><text x="315" y="{66 + i * 18}" class="pct">{size / total * 100:.1f}%</text>'
+        for i, (name, size) in enumerate(top)
+    )
+    svg = f'''<svg width="360" height="170" viewBox="0 0 360 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+<style>.title{{font:600 18px 'Segoe UI',Ubuntu,sans-serif;fill:#0891b2}}.label{{font:600 13px 'Segoe UI',Ubuntu,sans-serif;fill:#64748b}}.pct{{font:700 13px 'Segoe UI',Ubuntu,sans-serif;fill:#0f172a;text-anchor:end}}</style>
+<rect x="0.5" y="0.5" width="359" height="169" rx="4.5" fill="#ffffff00" stroke="#e2e8f0" stroke-opacity="0"/><text x="25" y="35" class="title">Top Languages</text>{rows}</svg>'''
     (OUT_DIR / "top-languages.svg").write_text(svg, encoding="utf-8")
 
 
 def main():
     OUT_DIR.mkdir(exist_ok=True)
-    repos = fetch_owner_repos()
+    repos = fetch_repos()
     write_stats_card(repos)
     write_top_langs_card(fetch_languages(repos))
 
