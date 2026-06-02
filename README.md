@@ -249,8 +249,6 @@
 
 ## GitHub 统计入口
 
-由于部分第三方 GitHub 统计图片服务在国内网络或 GitHub 代理缓存下容易加载失败，本页不依赖不稳定的统计图。下面保留 GitHub 原生入口和稳定 badge。
-
 <p align="center">
   <a href="https://github.com/YingaoWang-casia?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Repositories-View%20on%20GitHub-181717?style=for-the-badge&logo=github" />
