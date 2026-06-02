@@ -247,20 +247,6 @@
 
 ---
 
-## GitHub 统计入口
-<p align="center">
-  <a href="https://github.com/YingaoWang-casia?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repositories-View%20on%20GitHub-181717?style=for-the-badge&logo=github" />
-  </a>
-  <a href="https://github.com/YingaoWang-casia?tab=stars">
-    <img src="https://img.shields.io/badge/Stars-View%20Starred%20Repos-0891b2?style=for-the-badge&logo=github" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Open%20Source-Active-14b8a6?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/badge/Projects-Speech%20AI%20%7C%20RAG%20%7C%20Agent-0891b2?style=for-the-badge" />
-</p>
 ## GitHub 数据统计
 
 <div align="center">
@@ -271,6 +257,26 @@
 
 <a href="https://github.com/YingaoWang-casia?tab=repositories">
   <img height="168" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YingaoWang-casia&layout=compact&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a" alt="Top Languages" />
+</a>
+
+</div>
+
+---
+
+## Stars & Open Source Activity
+
+<div align="center">
+
+<a href="https://github.com/YingaoWang-casia?tab=repositories">
+  <img src="https://img.shields.io/badge/Public%20Repositories-View%20on%20GitHub-181717?style=for-the-badge&logo=github" alt="Public Repositories" />
+</a>
+
+<a href="https://github.com/YingaoWang-casia">
+  <img src="https://img.shields.io/badge/Open%20Source-Active-14b8a6?style=for-the-badge&logo=github" alt="Open Source Active" />
+</a>
+
+<a href="https://github.com/YingaoWang-casia?tab=repositories">
+  <img src="https://img.shields.io/badge/Projects-Speech%20AI%20%7C%20RAG%20%7C%20Agent-0891b2?style=for-the-badge" alt="Projects" />
 </a>
 
 </div>
