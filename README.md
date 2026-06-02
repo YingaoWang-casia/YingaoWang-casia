@@ -256,22 +256,6 @@
 </a>
 
 </div>
-
----
-
-## GitHub Stats
-
-<div align="center">
-
-<a href="https://github.com/YingaoWang-casia">
-  <img src="https://github-readme-stats.vercel.app/api?username=YingaoWang-casia&show_icons=true&theme=default&bg_color=ffffff&hide_border=true" alt="GitHub stats" />
-</a>
-<a href="https://github.com/YingaoWang-casia?tab=repositories">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YingaoWang-casia&layout=compact&theme=default&bg_color=ffffff&hide_border=true" alt="Top languages" />
-</a>
-
-</div>
-
 ---
 
 ## 当前关注
