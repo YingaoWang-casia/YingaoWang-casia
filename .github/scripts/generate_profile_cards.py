@@ -19,6 +19,8 @@ COLORS = {
     "HTML": "#e34c26",
     "CSS": "#563d7c",
     "Shell": "#89e051",
+    "PowerShell": "#012456",
+    "Makefile": "#427819",
     "C++": "#f34b7d",
     "C": "#555555",
     "Java": "#b07219",
@@ -82,7 +84,7 @@ def write_stats_card(repos):
 
     row_svg = []
     for index, (label, value) in enumerate(rows):
-        y = 70 + index * 22
+        y = 66 + index * 22
         row_svg.append(
             f'<text x="34" y="{y}" class="label">{escape(label)}:</text>'
             f'<text x="245" y="{y}" class="value">{value}</text>'
@@ -95,14 +97,12 @@ def write_stats_card(repos):
     .title {{ font: 600 18px 'Segoe UI', Ubuntu, sans-serif; fill: #0891b2; }}
     .label {{ font: 600 14px 'Segoe UI', Ubuntu, sans-serif; fill: #64748b; }}
     .value {{ font: 700 14px 'Segoe UI', Ubuntu, sans-serif; fill: #0f172a; }}
-    .hint {{ font: 500 12px 'Segoe UI', Ubuntu, sans-serif; fill: #94a3b8; }}
     .star {{ fill: #0891b2; }}
   </style>
   <rect x="0.5" y="0.5" width="466" height="169" rx="4.5" fill="#ffffff00" stroke="#e2e8f0" stroke-opacity="0"/>
   <text x="25" y="35" class="title">{escape(OWNER)}'s GitHub Stats</text>
   <path class="star" d="M388 43.5l9.4 19 21 3.1-15.2 14.8 3.6 20.9L388 91.4l-18.8 9.9 3.6-20.9-15.2-14.8 21-3.1 9.4-19z" opacity="0.16"/>
   {''.join(row_svg)}
-  <text x="34" y="154" class="hint">Updated automatically by GitHub Actions</text>
 </svg>
 '''
     (OUT_DIR / "stats.svg").write_text(svg, encoding="utf-8")
@@ -115,17 +115,14 @@ def write_top_langs_card(language_totals):
         top = [("No language data", 1)]
         total = 1
 
-    y = 68
     rows = []
-    x = 25
-    for name, size in top:
+    for index, (name, size) in enumerate(top):
         pct = size / total
-        width = max(5, round(290 * pct, 1))
+        y = 66 + index * 18
         color = COLORS.get(name, "#0891b2")
-        rows.append(f'<rect x="{x}" y="{y}" width="{width}" height="10" rx="5" fill="{color}"/>')
-        rows.append(f'<text x="25" y="{y + 28}" class="label">{escape(name)}</text>')
-        rows.append(f'<text x="285" y="{y + 28}" class="pct">{pct * 100:.1f}%</text>')
-        y += 20
+        rows.append(f'<circle cx="32" cy="{y - 4}" r="5" fill="{color}"/>')
+        rows.append(f'<text x="45" y="{y}" class="label">{escape(name)}</text>')
+        rows.append(f'<text x="315" y="{y}" class="pct">{pct * 100:.1f}%</text>')
 
     svg = f'''<svg width="360" height="170" viewBox="0 0 360 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">{escape(OWNER)} Top Languages</title>
