@@ -1,5 +1,15 @@
-The deployment is currently unavailable
-
-DEPLOYMENT_PAUSED
-
-sfo1::jgjkc-1780405891112-f224e694169c
+<svg width="360" height="170" viewBox="0 0 360 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">YingaoWang-casia Top Languages</title>
+  <desc id="desc">Top programming languages by repository byte count for YingaoWang-casia.</desc>
+  <style>
+    .title { font: 600 18px 'Segoe UI', Ubuntu, sans-serif; fill: #0891b2; }
+    .label { font: 600 13px 'Segoe UI', Ubuntu, sans-serif; fill: #64748b; }
+    .pct { font: 700 13px 'Segoe UI', Ubuntu, sans-serif; fill: #0f172a; text-anchor: end; }
+  </style>
+  <rect x="0.5" y="0.5" width="359" height="169" rx="4.5" fill="#ffffff00" stroke="#e2e8f0" stroke-opacity="0"/>
+  <text x="25" y="35" class="title">Top Languages</text>
+  <rect x="25" y="68" width="260.7" height="10" rx="5" fill="#3776ab"/><text x="25" y="96" class="label">Python</text><text x="285" y="96" class="pct">89.9%</text>
+  <rect x="25" y="88" width="26.1" height="10" rx="5" fill="#e34c26"/><text x="25" y="116" class="label">HTML</text><text x="285" y="116" class="pct">9.0%</text>
+  <rect x="25" y="108" width="5" height="10" rx="5" fill="#89e051"/><text x="25" y="136" class="label">Shell</text><text x="285" y="136" class="pct">0.6%</text>
+  <rect x="25" y="128" width="5" height="10" rx="5" fill="#0891b2"/><text x="25" y="156" class="label">Makefile</text><text x="285" y="156" class="pct">0.3%</text>
+</svg>
