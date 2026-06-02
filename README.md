@@ -264,10 +264,10 @@
 <div align="center">
 
 <a href="https://github.com/YingaoWang-casia">
-  <img height="168" src="https://github-readme-stats.vercel.app/api?username=YingaoWang-casia&show_icons=true&theme=default&bg_color=ffffff&hide_border=true" alt="GitHub stats" />
+  <img height="168" src="profile/stats.svg" alt="GitHub stats" />
 </a>
 <a href="https://github.com/YingaoWang-casia?tab=repositories">
-  <img height="168" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YingaoWang-casia&layout=compact&theme=default&bg_color=ffffff&hide_border=true" alt="Top languages" />
+  <img height="168" src="profile/top-langs.svg" alt="Top languages" />
 </a>
 
 </div>
