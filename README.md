@@ -36,7 +36,7 @@
 ### 实习经历
 <p align="left">
   <img align="left" width="40" src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.84.0/icons/company-color.svg" alt="博华信智" style="margin-right:12px;margin-bottom:6px;" />
-  <strong>博华信智有限公司 — 智能体研发工程师 | 2025.09-至今</strong><br/>
+  <strong>博华信智有限公司 — 智能体研发工程师 | 2025.09-2025.12</strong><br/>
   负责两款LLM智能文档Agent项目全流程开发：
   1. **技术方案生成助手**：基于大模型+知识检索，多节点并行解析文档，自动拆分、提取文档模块，自动拼接生成完整技术方案，将人工方案编写耗时由4~5小时压缩至30分钟；
   2. **招投标文件智能解析助手**：多路并行抽取招标全量参数，基于DeepSeek-Chat搭配差异化指令提示词，GTE+Rerank优化检索链路，动态构建临时知识库，实现招标文件全自动结构化解析处理。
