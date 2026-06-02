@@ -17,6 +17,7 @@ jobs:
       - name: Generate profile cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
         run: python .github/scripts/generate_profile_cards.py
 
       - name: Commit cards
