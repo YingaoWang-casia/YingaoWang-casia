@@ -12,6 +12,7 @@ PROFILE_TOKEN = os.environ.get("PROFILE_STATS_TOKEN", "")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 AUTH_TOKEN = PROFILE_TOKEN or GITHUB_TOKEN
 OUT_DIR = Path("profile")
+EXTRA_REPOSITORIES = ["Bairong-Xdynamics/TurnSense"]
 COLORS = {"Python": "#3776ab", "HTML": "#e34c26", "Shell": "#89e051", "PowerShell": "#012456", "Makefile": "#427819", "Jupyter Notebook": "#da5b0b", "JavaScript": "#f1e05a", "TypeScript": "#3178c6", "CSS": "#563d7c", "C++": "#f34b7d", "C": "#555555", "Java": "#b07219", "Go": "#00add8", "Rust": "#dea584", "Markdown": "#083fa1"}
 
 
@@ -38,6 +39,16 @@ def fetch_repos():
         if len(batch) < 100:
             break
         page += 1
+
+    seen = {repo.get("full_name") for repo in repos}
+    for full_name in EXTRA_REPOSITORIES:
+        if full_name not in seen:
+            try:
+                repo = request_json(f"https://api.github.com/repos/{full_name}")
+                repos.append(repo)
+                seen.add(full_name)
+            except Exception:
+                pass
     return repos
 
 
