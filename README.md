@@ -6,12 +6,23 @@
 
 <p>
   <a href="https://github.com/YingaoWang-casia">
-    <img src="https://img.shields.io/github/followers/YingaoWang-casia?label=Followers&style=for-the-badge&color=0891b2" alt="GitHub followers" />
+    <img src="https://img.shields.io/badge/GitHub-YingaoWang--casia-181717?style=for-the-badge&logo=github" alt="GitHub" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=YingaoWang-casia&style=for-the-badge&color=0f766e" alt="Profile views" />
+  <a href="mailto:2967523019@qq.com">
+    <img src="https://img.shields.io/badge/Email-2967523019%40qq.com-0891b2?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
 </p>
 
-Python PyTorch Speech AI Turn Detection VAD Full-duplex Interaction LLM Agent RAG
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/Speech%20AI-0891b2?style=flat-square" />
+  <img src="https://img.shields.io/badge/Turn%20Detection-14b8a6?style=flat-square" />
+  <img src="https://img.shields.io/badge/VAD-0f766e?style=flat-square" />
+  <img src="https://img.shields.io/badge/Full--duplex%20Interaction-2563eb?style=flat-square" />
+  <img src="https://img.shields.io/badge/LLM%20Agent-7c3aed?style=flat-square" />
+  <img src="https://img.shields.io/badge/RAG-c026d3?style=flat-square" />
+</p>
 
 </div>
 
@@ -29,16 +40,12 @@ Python PyTorch Speech AI Turn Detection VAD Full-duplex Interaction LLM Agent RA
 
 ## 教育经历
 
-<p align="left">
-  <strong>北京工业大学 | 人工智能 | 工学学士</strong><br/>
-  2022.09 - 2026.07
-</p>
+| 时间 | 学校 / 机构 | 专业 / 方向 |
+| --- | --- | --- |
+| 2022.09 - 2026.07 | 北京工业大学 | 人工智能，工学学士 |
+| 2026.09 - 至今 | 中国科学院自动化研究所 / 中国科学院大学 | 模式识别与智能系统，硕士（研 0） |
 
-<p align="left">
-  <strong>中国科学院自动化研究所 / 中国科学院大学 | 模式识别与智能系统 | 硕士（研 0）</strong><br/>
-  2026.09 - 至今<br/>
-  研究方向：语音信号处理、声学建模、语音交互系统、大模型应用工程
-</p>
+研究方向：语音信号处理、声学建模、语音交互系统、大模型应用工程。
 
 ---
 
@@ -109,13 +116,13 @@ Python PyTorch Speech AI Turn Detection VAD Full-duplex Interaction LLM Agent RA
 
 ## 技术栈
 
-<p>
-  <img src="https://skillicons.dev/icons?i=python,linux,bash,git,docker,pytorch,anaconda,ffmpeg&perline=8" alt="Tech stack" />
-</p>
-
-常用工具与框架：
-
-Python PyTorch Linux Docker FFmpeg ONNX Anaconda Git FastAPI LangChain Dify RAGFlow Coze
+| 方向 | 技术 |
+| --- | --- |
+| 编程与工程 | Python, Bash, Linux, Git, Docker |
+| 深度学习 | PyTorch, ONNX, Anaconda |
+| 音频处理 | FFmpeg, VAD, Turn Detection, Full-duplex Interaction |
+| 大模型工程 | LLM Agent, RAG, Prompt Engineering, DeepSeek, GTE, Rerank |
+| 工具平台 | Dify, RAGFlow, Coze, FastAPI |
 
 ---
 
@@ -125,43 +132,58 @@ Python PyTorch Linux Docker FFmpeg ONNX Anaconda Git FastAPI LangChain Dify RAGF
 
 <table>
   <tr>
-    <td width="50%">
-      <a href="https://github.com/Bairong-Xdynamics/TurnSense">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Bairong-Xdynamics&repo=TurnSense&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a" />
-      </a>
+    <td width="50%" valign="top">
+      <h3>
+        <a href="https://github.com/Bairong-Xdynamics/TurnSense">
+          TurnSense
+        </a>
+      </h3>
+      <p>
+        面向真实人机语音交互场景的三分类轮次检测模型。项目将用户输入划分为
+        <code>complete</code> / <code>incomplete</code> / <code>invalid</code>
+        三类，用于判断系统应当立即响应、继续等待，还是忽略无效输入。
+      </p>
+      <p>
+        <code>Turn Detection</code>
+        <code>Speech AI</code>
+        <code>VAD</code>
+        <code>ONNX</code>
+      </p>
+      <p>
+        <a href="https://github.com/Bairong-Xdynamics/TurnSense">
+          <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github" />
+        </a>
+        <img src="https://img.shields.io/github/stars/Bairong-Xdynamics/TurnSense?style=flat-square&color=0891b2" />
+        <img src="https://img.shields.io/badge/status-active-14b8a6?style=flat-square" />
+      </p>
     </td>
-    <td width="50%">
-      <a href="https://github.com/YingaoWang-casia/CoDeTT.github.io">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=YingaoWang-casia&repo=CoDeTT.github.io&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a" />
-      </a>
+    <td width="50%" valign="top">
+      <h3>
+        <a href="https://github.com/YingaoWang-casia/CoDeTT.github.io">
+          CoDeTT Benchmark
+        </a>
+      </h3>
+      <p>
+        面向全双工语音交互的多分类轮次检测 Benchmark，用于评测 Turn-Taking
+        模型在多场景决策任务中的表现。项目包含多模型统一评测脚本，
+        论文已投稿至 Interspeech。
+      </p>
+      <p>
+        <code>Benchmark</code>
+        <code>Full-duplex</code>
+        <code>Turn-taking</code>
+        <code>Evaluation</code>
+      </p>
+      <p>
+        <a href="https://github.com/YingaoWang-casia/CoDeTT.github.io">
+          <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github" />
+        </a>
+        <img src="https://img.shields.io/github/stars/YingaoWang-casia/CoDeTT.github.io?style=flat-square&color=0891b2" />
+        <img src="https://img.shields.io/badge/status-active-14b8a6?style=flat-square" />
+      </p>
     </td>
   </tr>
 </table>
-
-#### TurnSense
-
-面向真实人机语音交互场景的三分类轮次检测模型。项目将用户输入划分为 complete / incomplete / invalid 三类，用于判断系统应当立即响应、继续等待，还是忽略无效输入。
-
-主要特点：
-
-- 支持三分类语义轮次检测
-- 面向语音助手、智能客服、实时通话等场景
-- 关注误打断、抢话、无效触发等真实交互问题
-- 提供模型、评测与工程化部署相关能力
-- 当前持续维护
-
-#### CoDeTT Benchmark
-
-面向全双工语音交互的多分类轮次检测 Benchmark，用于评测 Turn-Taking 模型在多场景决策任务中的表现。
-
-项目包含：
-
-- 多分类全双工轮次检测评测任务
-- 多模型统一评测脚本
-- Qwen3-Omni、MiniCPM、KE-SemanticVAD 等模型评测入口
-- 论文已投稿至 Interspeech
-- 数据集已发布至 Hugging Face 和 ModelScope
-- 当前持续维护
 
 ---
 
@@ -169,94 +191,79 @@ Python PyTorch Linux Docker FFmpeg ONNX Anaconda Git FastAPI LangChain Dify RAGF
 
 <table>
   <tr>
-    <td width="50%">
-      <a href="https://github.com/YingaoWang-casia/shushu-ProjectProof">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=YingaoWang-casia&repo=shushu-ProjectProof&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a" />
-      </a>
+    <td width="50%" valign="top">
+      <h3>
+        <a href="https://github.com/YingaoWang-casia/shushu-ProjectProof">
+          ProjectProof for Codex
+        </a>
+      </h3>
+      <p>
+        面向 AI / Agent / RAG / 算法 / 数据 / 前后端实习项目的 Codex Skill。
+        项目目标不是编造经历，而是帮助用户把真实项目重新放回证据链、
+        工程边界和面试追问中，降低“小厂项目 / 内部项目 / Agent Demo”
+        在简历和面试中显得 toy 的问题。
+      </p>
+      <p>
+        <code>Codex Skill</code>
+        <code>Project Review</code>
+        <code>Evidence Contract</code>
+        <code>Interview</code>
+      </p>
+      <p>
+        <a href="https://github.com/YingaoWang-casia/shushu-ProjectProof">
+          <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github" />
+        </a>
+        <img src="https://img.shields.io/github/stars/YingaoWang-casia/shushu-ProjectProof?style=flat-square&color=0891b2" />
+        <img src="https://img.shields.io/badge/status-active-14b8a6?style=flat-square" />
+      </p>
     </td>
-    <td width="50%">
-      <a href="https://github.com/YingaoWang-casia/shushu-InterviewProof-RAG">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=YingaoWang-casia&repo=shushu-InterviewProof-RAG&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a" />
-      </a>
+    <td width="50%" valign="top">
+      <h3>
+        <a href="https://github.com/YingaoWang-casia/shushu-InterviewProof-RAG">
+          InterviewProof-RAG
+        </a>
+      </h3>
+      <p>
+        Codex-first 的本地面经 RAG 与项目压测系统。项目用于将零散面经
+        整理为可追溯的 InterviewCard，并通过本地索引、Codex Pack 和
+        ProjectProof Bridge 反向检查个人项目能否扛住真实面试追问。
+      </p>
+      <p>
+        <code>RAG</code>
+        <code>Local Index</code>
+        <code>InterviewCard</code>
+        <code>Codex Pack</code>
+      </p>
+      <p>
+        <a href="https://github.com/YingaoWang-casia/shushu-InterviewProof-RAG">
+          <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github" />
+        </a>
+        <img src="https://img.shields.io/github/stars/YingaoWang-casia/shushu-InterviewProof-RAG?style=flat-square&color=0891b2" />
+        <img src="https://img.shields.io/badge/status-active-14b8a6?style=flat-square" />
+      </p>
     </td>
   </tr>
 </table>
 
-#### ProjectProof for Codex
-
-面向 AI / Agent / RAG / 算法 / 数据 / 前后端实习项目的 Codex Skill。项目目标不是编造经历，而是帮助用户把真实项目重新放回证据链、工程边界和面试追问中，降低“小厂项目 / 内部项目 / Agent Demo”在简历和面试中显得 toy 的问题。
-
-核心能力：
-
-- Truth Boundary：区分做过、参与过、了解过、补做后可写、当前不能写
-- Evidence Contract：为每条强表达绑定代码、日志、截图、指标或 bad case
-- Production Gap：分析 demo 与生产级项目之间的工程差距
-- Question Tree：生成面试追问树
-- SP / SSP Scorecard：评估项目竞争力和补强优先级
-- 当前持续维护
-
-#### InterviewProof-RAG
-
-Codex-first 的本地面经 RAG 与项目压测系统。项目用于将零散面经整理为可追溯的 InterviewCard，并通过本地索引、Codex Pack 和 ProjectProof Bridge 反向检查个人项目能否扛住真实面试追问。
-
-核心能力：
-
-- 面经资料结构化整理
-- 本地 lexical / vector index
-- InterviewCard 抽取、去重、审核与检索
-- Codex Pack 导出
-- ProjectProof input 导出
-- 面向项目深挖的模拟面试与证据补强
-- 当前持续维护
-
 ---
 
-## GitHub 数据统计
+## GitHub 统计入口
 
-<div align="center">
+由于部分第三方 GitHub 统计图片服务在国内网络或 GitHub 代理缓存下容易加载失败，本页不依赖不稳定的统计图。下面保留 GitHub 原生入口和稳定 badge。
 
-<img src="https://github-readme-stats.vercel.app/api?username=YingaoWang-casia&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a&icon_color=14b8a6&custom_title=GitHub%20Stats" height="170" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YingaoWang-casia&layout=compact&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a" height="170" />
-
-</div>
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YingaoWang-casia&theme=github" alt="GitHub Profile Summary" />
-
-</div>
-
----
-
-## Stars & Open Source Activity
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=YingaoWang-casia&hide_border=true&background=ffffff&stroke=0891b2&ring=14b8a6&fire=0891b2&currStreakLabel=0f172a&sideLabels=0f172a&currStreakNum=0f172a&sideNums=0f172a&dates=64748b" alt="GitHub Streak" />
-
-</div>
-
-<div align="center">
-
-<a href="https://github.com/YingaoWang-casia?tab=repositories">
-  <img src="https://img.shields.io/badge/Open%20Source-Active-14b8a6?style=for-the-badge&logo=github" />
-</a>
-<a href="https://github.com/YingaoWang-casia">
-  <img src="https://img.shields.io/badge/Projects-Speech%20AI%20%7C%20RAG%20%7C%20Agent-0891b2?style=for-the-badge" />
-</a>
-
-</div>
-
----
-
-## 贡献动态
-
-<div align="center">
-  <a href="https://github.com/YingaoWang-casia">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=YingaoWang-casia&bg_color=ffffff&color=0f172a&line=0891b2&point=14b8a6&area=true&area_color=ccfbf1&hide_border=true&custom_title=GitHub%20Contribution%20Graph" alt="GitHub Contribution Graph" />
+<p align="center">
+  <a href="https://github.com/YingaoWang-casia?tab=repositories">
+    <img src="https://img.shields.io/badge/Public%20Repositories-View%20on%20GitHub-181717?style=for-the-badge&logo=github" />
   </a>
-</div>
+  <a href="https://github.com/YingaoWang-casia?tab=stars">
+    <img src="https://img.shields.io/badge/Stars-View%20Starred%20Repos-0891b2?style=for-the-badge&logo=github" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20Source-Active-14b8a6?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Projects-Speech%20AI%20%7C%20RAG%20%7C%20Agent-0891b2?style=for-the-badge" />
+</p>
 
 ---
 
