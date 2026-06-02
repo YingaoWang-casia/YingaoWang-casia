@@ -6,6 +6,6 @@
 <text x="34" y="76" class="label">Tracked Repositories:</text><text x="245" y="76" class="value">5</text>
 <text x="34" y="94" class="label">Original Projects:</text><text x="245" y="94" class="value">4</text>
 <text x="34" y="112" class="label">Repository Forks:</text><text x="245" y="112" class="value">1</text>
-<text x="34" y="130" class="label">Private Repositories:</text><text x="245" y="130" class="value">1</text>
+<text x="34" y="130" class="label">Private Repositories:</text><text x="245" y="130" class="value">0</text>
 <text x="34" y="148" class="label">Forked Repositories:</text><text x="245" y="148" class="value">1</text>
-<text x="34" y="162" class="note">scope: GitHub App visible repositories</text></svg>
+<text x="34" y="162" class="note">scope: public GitHub repositories</text></svg>
