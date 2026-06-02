@@ -1,0 +1,43 @@
+name: Update GitHub Stats SVG
+
+on:
+  # 每小时更新一次
+  schedule:
+    - cron: '7 * * * *'
+  # 手动触发（发布时用）
+  workflow_dispatch:
+  # 推送到 main 时也更新一次
+  push:
+    branches:
+      - main
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate stats.svg
+        run: |
+          curl -s "https://github-readme-stats.vercel.app/api?username=YingaoWang-casia&show_icons=true&theme=default&bg_color=ffffff&hide_border=true" -o profile/stats.svg
+
+      - name: Generate top-langs.svg
+        run: |
+          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=YingaoWang-casia&layout=compact&theme=default&bg_color=ffffff&hide_border=true" -o profile/top-langs.svg
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile/stats.svg profile/top-langs.svg
+          # 如果有变更才提交
+          git diff --cached --quiet || git commit -m "chore: update stats SVG [skip ci]" && git push
