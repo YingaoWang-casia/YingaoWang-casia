@@ -105,7 +105,7 @@ def write_stats_card(repos):
   {''.join(row_svg)}
 </svg>
 '''
-    (OUT_DIR / "stats.svg").write_text(svg, encoding="utf-8")
+    (OUT_DIR / "github-stats.svg").write_text(svg, encoding="utf-8")
 
 
 def write_top_langs_card(language_totals):
@@ -137,7 +137,7 @@ def write_top_langs_card(language_totals):
   {''.join(rows)}
 </svg>
 '''
-    (OUT_DIR / "top-langs.svg").write_text(svg, encoding="utf-8")
+    (OUT_DIR / "top-languages.svg").write_text(svg, encoding="utf-8")
 
 
 def main():
