@@ -264,10 +264,10 @@
 <div align="center">
 
 <a href="https://github.com/YingaoWang-casia">
-  <img height="168" src="https://raw.githubusercontent.com/YingaoWang-casia/YingaoWang-casia/main/profile/stats.svg" alt="GitHub stats" />
+  <img height="168" src="https://raw.githubusercontent.com/YingaoWang-casia/YingaoWang-casia/main/profile/github-stats.svg" alt="GitHub stats" />
 </a>
 <a href="https://github.com/YingaoWang-casia?tab=repositories">
-  <img height="168" src="https://raw.githubusercontent.com/YingaoWang-casia/YingaoWang-casia/main/profile/top-langs.svg" alt="Top languages" />
+  <img height="168" src="https://raw.githubusercontent.com/YingaoWang-casia/YingaoWang-casia/main/profile/top-languages.svg" alt="Top languages" />
 </a>
 
 </div>
