@@ -248,9 +248,6 @@
 ---
 
 ## GitHub 统计入口
-
-由于部分第三方 GitHub 统计图片服务在国内网络或 GitHub 代理缓存下容易加载失败，本页不依赖不稳定的统计图。下面保留 GitHub 原生入口和稳定 badge。
-
 <p align="center">
   <a href="https://github.com/YingaoWang-casia?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Repositories-View%20on%20GitHub-181717?style=for-the-badge&logo=github" />
@@ -264,6 +261,20 @@
   <img src="https://img.shields.io/badge/Open%20Source-Active-14b8a6?style=for-the-badge&logo=github" />
   <img src="https://img.shields.io/badge/Projects-Speech%20AI%20%7C%20RAG%20%7C%20Agent-0891b2?style=for-the-badge" />
 </p>
+## GitHub 数据统计
+
+<div align="center">
+
+<a href="https://github.com/YingaoWang-casia">
+  <img height="168" src="https://github-readme-stats.vercel.app/api?username=YingaoWang-casia&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a&icon_color=14b8a6&custom_title=GitHub%20Stats" alt="GitHub Stats" />
+</a>
+
+<a href="https://github.com/YingaoWang-casia?tab=repositories">
+  <img height="168" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YingaoWang-casia&layout=compact&hide_border=true&bg_color=ffffff&title_color=0891b2&text_color=0f172a" alt="Top Languages" />
+</a>
+
+</div>
+
 
 ---
 
