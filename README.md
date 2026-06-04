@@ -166,7 +166,7 @@
       <p>
         面向全双工语音交互的多分类轮次检测 Benchmark，用于评测 Turn-Taking
         模型在多场景决策任务中的表现。项目包含多模型统一评测脚本，
-        论文已投稿至 Interspeech。
+        Interspeech2026。
       </p>
       <p>
         <code>Benchmark</code>
