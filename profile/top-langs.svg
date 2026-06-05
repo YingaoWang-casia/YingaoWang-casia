@@ -1,5 +1,1 @@
-The deployment is currently unavailable
-
-DEPLOYMENT_PAUSED
-
-sfo1::nmvsk-1780661713813-ec1b1c81dd55
+<svg width="360" height="170" viewBox="0 0 360 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"><style>.title{font:600 18px 'Segoe UI',Ubuntu,sans-serif;fill:#0891b2}.label{font:600 13px 'Segoe UI',Ubuntu,sans-serif;fill:#64748b}.pct{font:700 13px 'Segoe UI',Ubuntu,sans-serif;fill:#0f172a;text-anchor:end}</style><rect x="0.5" y="0.5" width="359" height="169" rx="4.5" fill="#ffffff00" stroke="#e2e8f0" stroke-opacity="0"/><text x="25" y="35" class="title">Top Languages</text><circle cx="32" cy="62" r="5" fill="#3776ab"/><text x="45" y="66" class="label">Python</text><text x="315" y="66" class="pct">91.4%</text><circle cx="32" cy="80" r="5" fill="#e34c26"/><text x="45" y="84" class="label">HTML</text><text x="315" y="84" class="pct">6.0%</text><circle cx="32" cy="98" r="5" fill="#f1e05a"/><text x="45" y="102" class="label">JavaScript</text><text x="315" y="102" class="pct">1.9%</text><circle cx="32" cy="116" r="5" fill="#89e051"/><text x="45" y="120" class="label">Shell</text><text x="315" y="120" class="pct">0.4%</text><circle cx="32" cy="134" r="5" fill="#427819"/><text x="45" y="138" class="label">Makefile</text><text x="315" y="138" class="pct">0.2%</text></svg>

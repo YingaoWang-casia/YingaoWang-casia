@@ -153,7 +153,7 @@
         <a href="https://github.com/Bairong-Xdynamics/TurnSense">
           <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github" />
         </a>
-        <img src="https://img.shields.io/github/stars/Bairong-Xdynamics/TurnSense?style=flat-square&color=0891b2" />
+        <img src="profile/badges/stars-turnsense.svg" />
         <img src="https://img.shields.io/badge/status-active-14b8a6?style=flat-square" />
       </p>
     </td>
@@ -178,7 +178,7 @@
         <a href="https://github.com/YingaoWang-casia/CoDeTT.github.io">
           <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github" />
         </a>
-        <img src="https://img.shields.io/github/stars/YingaoWang-casia/CoDeTT.github.io?style=flat-square&color=0891b2" />
+        <img src="profile/badges/stars-codett.svg" />
         <img src="https://img.shields.io/badge/status-active-14b8a6?style=flat-square" />
       </p>
     </td>
@@ -213,7 +213,7 @@
         <a href="https://github.com/YingaoWang-casia/shushu-ProjectProof">
           <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github" />
         </a>
-        <img src="https://img.shields.io/github/stars/YingaoWang-casia/shushu-ProjectProof?style=flat-square&color=0891b2" />
+        <img src="profile/badges/stars-projectproof.svg" />
         <img src="https://img.shields.io/badge/status-active-14b8a6?style=flat-square" />
       </p>
     </td>
@@ -238,7 +238,7 @@
         <a href="https://github.com/YingaoWang-casia/shushu-InterviewProof-RAG">
           <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github" />
         </a>
-        <img src="https://img.shields.io/github/stars/YingaoWang-casia/shushu-InterviewProof-RAG?style=flat-square&color=0891b2" />
+        <img src="profile/badges/stars-interviewproof-rag.svg" />
         <img src="https://img.shields.io/badge/status-active-14b8a6?style=flat-square" />
       </p>
     </td>
