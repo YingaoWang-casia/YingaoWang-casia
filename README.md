@@ -1,8 +1,11 @@
 <div align="center">
 
-<img src="profile/hero-wave.svg" alt="Speech AI profile banner" width="100%" />
-
 # 王迎澳
+
+<p>
+  <a href="README.md"><strong>中文</strong></a> ·
+  <a href="README_EN.md">English</a>
+</p>
 
 ### 🎙️ 语音信号处理 | 音频 AI | 轮次检测 | 全双工交互 | LLM 智能体工程
 
@@ -97,10 +100,6 @@
 ---
 
 ## 🧭 研究与工程方向
-
-<div align="center">
-  <img src="profile/research-map.svg" alt="Research map from VAD to speech agents" width="100%" />
-</div>
 
 ### 🎧 Speech AI / Audio Intelligence
 
