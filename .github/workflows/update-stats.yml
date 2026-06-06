@@ -26,7 +26,7 @@ jobs:
       - name: Generate profile SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TRACKED_REPOSITORIES: Bairong-Xdynamics/TurnSense
+          TRACKED_REPOSITORIES: Bairong-Xdynamics/TurnSense Baiji-Team/TurnSense
         run: node profile/generate-profile-svgs.mjs
 
       - name: Commit and push if changed
