@@ -1,0 +1,16 @@
+<svg width="960" height="180" viewBox="0 0 960 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Research map</title>
+  <desc id="desc">A compact map from VAD to turn detection, full-duplex interaction, benchmark, and speech agents.</desc>
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="960" y2="180" gradientUnits="userSpaceOnUse"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f0fdfa"/></linearGradient>
+    <style>.node{fill:#fff;stroke:#bae6fd;stroke-width:1.5}.label{font:700 15px 'Segoe UI',Ubuntu,sans-serif;fill:#0f172a}.sub{font:600 11px 'Segoe UI',Ubuntu,sans-serif;fill:#64748b}.arrow{stroke:#0891b2;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.dot{fill:#14b8a6}</style>
+  </defs>
+  <rect x="1" y="1" width="958" height="178" rx="14" fill="url(#band)" stroke="#e2e8f0"/>
+  <path class="arrow" d="M176 90H258M342 90H424M508 90H590M674 90H756"/>
+  <path class="arrow" d="M250 82L258 90L250 98M416 82L424 90L416 98M582 82L590 90L582 98M748 82L756 90L748 98"/>
+  <g transform="translate(50 48)"><rect class="node" width="126" height="84" rx="12"/><circle class="dot" cx="25" cy="28" r="7"/><text class="label" x="44" y="32">VAD</text><text class="sub" x="22" y="57">voice activity</text></g>
+  <g transform="translate(258 48)"><rect class="node" width="126" height="84" rx="12"/><circle class="dot" cx="25" cy="28" r="7"/><text class="label" x="44" y="32">Turn</text><text class="sub" x="22" y="57">complete / wait</text></g>
+  <g transform="translate(424 48)"><rect class="node" width="126" height="84" rx="12"/><circle class="dot" cx="25" cy="28" r="7"/><text class="label" x="44" y="32">Duplex</text><text class="sub" x="22" y="57">interrupt timing</text></g>
+  <g transform="translate(590 48)"><rect class="node" width="126" height="84" rx="12"/><circle class="dot" cx="25" cy="28" r="7"/><text class="label" x="44" y="32">Benchmark</text><text class="sub" x="22" y="57">multi-scenario eval</text></g>
+  <g transform="translate(756 48)"><rect class="node" width="154" height="84" rx="12"/><circle class="dot" cx="25" cy="28" r="7"/><text class="label" x="44" y="32">Speech Agent</text><text class="sub" x="22" y="57">listen, reason, act</text></g>
+</svg>
