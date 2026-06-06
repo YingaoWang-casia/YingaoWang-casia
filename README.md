@@ -1,8 +1,14 @@
 <div align="center">
 
+<img src="profile/hero-wave.svg" alt="Speech AI profile banner" width="100%" />
+
 # 王迎澳
 
-### 语音信号处理 | 音频 AI | 轮次检测 | 全双工交互 | LLM 智能体工程
+### 🎙️ 语音信号处理 | 音频 AI | 轮次检测 | 全双工交互 | LLM 智能体工程
+
+<p>
+  <strong>Listening, waiting, interrupting and responding at the right moment.</strong>
+</p>
 
 <p>
   <a href="https://github.com/YingaoWang-casia">
@@ -28,7 +34,7 @@
 
 ---
 
-## 关于我
+## 👋 关于我
 
 本科就读于北京工业大学人工智能专业，目前为中国科学院自动化研究所模式识别与智能系统方向硕士。
 
@@ -38,7 +44,7 @@
 
 ---
 
-## 教育经历
+## 🎓 教育经历
 
 | 时间 | 学校 / 机构 | 专业 / 方向 |
 | --- | --- | --- |
@@ -49,9 +55,9 @@
 
 ---
 
-## 实习经历
+## 💼 实习经历
 
-### 百融云创 — 语音算法工程师
+### 🗣️ 百融云创 — 语音算法工程师
 
 时间：2025.12 - 至今
 
@@ -72,7 +78,7 @@
 
 ---
 
-### 博华信智有限公司 — 智能体研发工程师
+### 🧠 博华信智有限公司 — 智能体研发工程师
 
 时间：2025.09 - 2025.12
 
@@ -90,9 +96,13 @@
 
 ---
 
-## 研究与工程方向
+## 🧭 研究与工程方向
 
-### Speech AI / Audio Intelligence
+<div align="center">
+  <img src="profile/research-map.svg" alt="Research map from VAD to speech agents" width="100%" />
+</div>
+
+### 🎧 Speech AI / Audio Intelligence
 
 - VAD 语音端点检测
 - 三分类轮次检测
@@ -102,7 +112,7 @@
 - 语音数据集构建、清洗、标注与评测
 - 长音频切分、对齐、推理与后处理
 
-### LLM Agent / RAG Engineering
+### 🧩 LLM Agent / RAG Engineering
 
 - LLM 智能体系统开发
 - RAG 知识库搭建与检索链路优化
@@ -114,7 +124,7 @@
 
 ---
 
-## 技术栈
+## 🧰 技术栈
 
 | 方向 | 技术 |
 | --- | --- |
@@ -126,16 +136,16 @@
 
 ---
 
-## 代表性开源项目
+## 🚀 代表性开源项目
 
-### Speech AI / Turn-taking
+### 🎙️ Speech AI / Turn-taking
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h3>
         <a href="https://github.com/Bairong-Xdynamics/TurnSense">
-          TurnSense
+          🎧 TurnSense
         </a>
       </h3>
       <p>
@@ -160,7 +170,7 @@
     <td width="50%" valign="top">
       <h3>
         <a href="https://github.com/YingaoWang-casia/CoDeTT.github.io">
-          CoDeTT Benchmark
+          🧪 CoDeTT Benchmark
         </a>
       </h3>
       <p>
@@ -187,14 +197,14 @@
 
 ---
 
-### LLM Agent / RAG / Codex Skill
+### 🧩 LLM Agent / RAG / Codex Skill
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h3>
         <a href="https://github.com/YingaoWang-casia/shushu-ProjectProof">
-          ProjectProof for Codex
+          🛠️ ProjectProof for Codex
         </a>
       </h3>
       <p>
@@ -220,7 +230,7 @@
     <td width="50%" valign="top">
       <h3>
         <a href="https://github.com/YingaoWang-casia/shushu-InterviewProof-RAG">
-          InterviewProof-RAG
+          📚 InterviewProof-RAG
         </a>
       </h3>
       <p>
@@ -247,7 +257,7 @@
 
 ---
 
-## Contribution Activity
+## 📈 Contribution Activity
 
 <div align="center">
 
@@ -259,7 +269,7 @@
 
 ---
 
-## GitHub Stats
+## ⭐ GitHub Stats
 
 <div align="center">
 
@@ -274,7 +284,7 @@
 
 ---
 
-## 当前关注
+## 🔭 当前关注
 
 - 面向真实语音交互的三分类 / 多分类轮次检测
 - 全双工语音交互中的打断识别与响应时机控制
@@ -285,7 +295,7 @@
 
 ---
 
-## 联系方式
+## 📬 联系方式
 
 - GitHub: @YingaoWang-casia
 - Email: 2967523019@qq.com
